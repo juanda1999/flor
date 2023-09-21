@@ -18,27 +18,30 @@ body{
 	overflow: hidden;
 }
 
-h1 { 
-	position: relative; 
+h1 {
 	float: left;
-	background: tomato;
 	color: #fff;
-	font-size: 28px;
-    padding: 0 25px;
+	position: relative;
+	font-size: 17px;
 }
 
 h1 span {
-    position:absolute;
-    right:0;
-    width:0;
-    background: tomato;
-    border-left: 1px solid #fff;
-    animation: escribir 5s steps(30) infinite alternate;
+	position: absolute;
+	right: 0;
+	width: 0;
+	background: tomato;
+	border-left: 1px solid #fff;
+	animation: maquina 8s infinite alternate steps(50);
+	-webkit-animation: maquina 8s infinite alternate steps(50);
 }
 
-@keyframes escribir {
-    from { width: 100% }
-    to { width:0 }
+@keyframes maquina {
+	from {
+		width: 100%;
+	}
+	to {
+		width: 0;
+	}
 }
 
 
@@ -356,10 +359,10 @@ h1 span {
 @media (max-width: 475px){
 	#flor{
 		position: fixed;
-		width: 400px;
+		width: 500px;
 		top: 0;
 		/* left: -150px; */
-		transform: scale(0.6);
+		/* transform: scale(0.6); */
 
 	}
 }
